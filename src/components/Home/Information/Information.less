@@ -1,0 +1,172 @@
+@import '../floors.less';
+
+.homeInformationBox {
+  min-height : 502px;
+  margin-bottom : 45px;
+  background : #fff;
+  .floorMain {
+    padding : 0 0 0 10px;
+  }
+  .floorTitle {
+    background : url('../../../assets/home/f3.png') no-repeat top center;
+  }
+
+  .ant-tabs-bar {
+    margin-bottom : 10px;
+    border : none;
+    border-color : #f1f1f1;
+  }
+  .ant-tabs-ink-bar {
+    display : none !important;
+  }
+  .ant-tabs-tab {
+    margin-right : 5px;
+    padding : 0 0 5px 0;
+    .ant-btn {
+      width : 76px;
+      height : 26px;
+      border : none;
+      border-radius : 15px;
+    }
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color : #fff;
+      border-color : #8088ae;
+      background : #8088ae;
+    }
+  }
+  .ant-tabs-tab-active {
+    .ant-btn {
+      color : #fff;
+      border-color : #8088ae;
+      border-radius : 15px;
+      background : #8088ae;
+    }
+  }
+
+  .MainTop {
+    position : relative;
+    margin-bottom : 7px;
+
+    a {
+      display : block;
+      img {
+        width : 100%;
+        transition : all .3s ease-in-out;
+      }
+    }
+    a:hover > img {
+      opacity : .7;
+    }
+    p {
+      position : absolute;
+      bottom : 4px;
+      overflow : hidden;
+      width : 100%;
+      height : 32px;
+      line-height : 32px;
+      text-indent : 1em;
+      color : #fff;
+      background : rgba(0, 0, 0, .212);
+    }
+  }
+
+  .InformationListItem {
+    position : relative;
+    padding-left : 5px;
+    line-height : 29px;
+    a {
+      padding-left : 15px;
+      font-size : 14px;
+    }
+    &::before {
+      position : absolute;
+      top : 11px;
+      display : inline-block;
+      width : 5px;
+      height : 5px;
+      content : '';
+      border-radius : 15px;
+      background : #8088ae;
+    }
+  }
+  .floorContent {
+    margin : 20px 20px 20px 0;
+    padding : 20px;
+    .inforTitle {
+      position : relative;
+      margin-bottom : 20px;
+      padding-left : 10px;
+      font-size : 16px;
+      font-size : 16px;
+      &::before {
+        position : absolute;
+        top : 5px;
+        left : 0;
+        display : inline-block;
+        height : 16px;
+        margin-right : 15px;
+        content : '';
+        border-left : 4px solid #8088ae;
+      }
+      span {
+        float : right;
+        font-size : 12px;
+        a {
+          color : #999 !important;
+          &:hover {
+            color : #ff6724 !important;
+          }
+        }
+      }
+    }
+    .inforContentItem {
+      margin-bottom : 20px;
+      border-bottom : 1px solid #f1f1f1;
+      &:last-child {
+        margin-bottom : 0;
+        padding-bottom : 0;
+        border : none;
+      }
+
+      .inforTopListItem {
+        h1 {
+          position : relative;
+          margin-bottom : 12px;
+          font-size : 18px;
+          font-weight : bold;
+          line-height : 18px;
+          span {
+            float : right;
+            font-size : 12px;
+            font-weight : normal;
+            color : #999;
+          }
+        }
+        p {
+          width : 310px;
+          margin-bottom : 20px;
+          line-height : 17px;
+          color : #999;
+        }
+        &:last-child > p {
+          margin-bottom : 17px;
+        }
+      }
+      .inforList {
+        margin-top : -8px;
+        margin-left : 40px;
+        .inforListItem {
+          position : relative;
+          font-size : 14px;
+          line-height : 27px;
+          span {
+            float : right;
+            font-size : 12px;
+            color : #999;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+@import '../floors.less';
+
+.shoppingBox {
+  min-height : 598px;
+  margin-bottom : 25px;
+  background : #fff url('../../../assets/home/f2-1.png') no-repeat 160px 285px;
+  .floorTitle {
+    background : url('../../../assets/home/f1.png') no-repeat top center;
+  }
+  .floorMain {
+    padding : 0 1px 0 10px;
+  }
+
+  .youzhiTop {
+    .topTitle {
+      margin-bottom : 15px;
+      font-size : 14px;
+      text-align : center;
+      text-indent : 1em;
+      background : url('../../../assets/home/youzhibg.png') no-repeat center;
+    }
+    .topTabs {
+      .ant-tabs-bar {
+        margin-bottom : 20px;
+      }
+      .ant-tabs-nav {
+        .ant-tabs-tab {
+          padding : 5px 16px 6px;
+          font-size : 12px;
+          border-color : #fff;
+          border-radius : 0;
+          background : #fff;
+          &:hover {
+            color : #ff6724;
+          }
+        }
+        .ant-tabs-tab-active {
+          padding : 5px 16px 7px;
+          color : #ff6724;
+          border-color : #dedede;
+          border-top : 2px solid #ff6724;
+        }
+      }
+      .topList {
+        margin-bottom : 25px;
+        .topListAuItem {
+          position : relative;
+          height : 24px;
+          margin-bottom : 10px;
+          padding-left : 2.2em;
+          font-size : 12px;
+          line-height : 24px;
+          text-align : right;
+          .name {
+            float : left;
+            margin-right : 5px;
+            font-size : 14px;
+          }
+          .tagS {
+            width : 85px;
+          }
+          .ant-tag　 {
+            height : 14px;
+            padding : 0 2px;
+            line-height : 12px;
+            line-height : 12px;
+          }
+          .addrs {
+            margin-right : 5px;
+            font-size : 12px;
+          }
+          .liang {
+            em {
+              margin-left : 5px;
+              font-style : normal;
+              color : #dedede;
+            }
+          }
+          &.topListAuItem1 {
+            background : url('../../../assets/home/top1.png') no-repeat left center;
+          }
+          &.topListAuItem2 {
+            background : url('../../../assets/home/top2.png') no-repeat left center;
+          }
+          &.topListAuItem3 {
+            background : url('../../../assets/home/top3.png') no-repeat left center;
+          }
+          &.topListAuItem4::before {
+            position : absolute;
+            left : 5px;
+            font-weight : bold;
+            content : '#4';
+          }
+          &.topListAuItem5::before {
+            position : absolute;
+            left : 5px;
+            font-weight : bold;
+            content : '#5';
+          }
+        }
+      }
+
+      .topGYList {
+        .topGYItem {
+          padding-left : 60px;
+          font-size : 14px;
+          line-height : 27px;
+          &.topGYItem1 {
+            background : url('../../../assets/home/NO01.png') no-repeat left center;
+          }
+          &.topGYItem2 {
+            background : url('../../../assets/home/NO02.png') no-repeat left center;
+          }
+          &.topGYItem3 {
+            background : url('../../../assets/home/NO03.png') no-repeat left center;
+          }
+          &.topGYItem4 {
+            background : url('../../../assets/home/NO04.png') no-repeat left center;
+          }
+          &.topGYItem5 {
+            background : url('../../../assets/home/NO05.png') no-repeat left center;
+          }
+        }
+      }
+    }
+  }
+  .goodsTableBox {
+    border-top : 3px solid #ff6724;
+  }
+  .ant-col-17 {
+    background : url('../../../assets/home/f-bg.png')no-repeat -3px 40px;
+  }
+  .HomeGoodsTableBox {
+    padding : 10px 20px 30px 0;
+    .saiXuan {
+      position : absolute;
+      z-index : 2;
+      top : 15px;
+      right : 30px;
+      display : inline-block;
+      .ant-btn {
+        width : 80px;
+        height : 24px;
+        margin-right : 5px;
+        border-radius : 15px;
+        &:last-child {
+          display : none;
+        }
+        &.ant-btn-action,
+        &:hover {
+          color : #ff6724;
+          border-color : #ff6724;
+        }
+      }
+    }
+    .buyMore {
+      padding-top : 15px;
+      padding-right : 15px;
+      font-size : 12px;
+      text-align : right;
+    }
+    .ant-tabs-bar {
+      margin-bottom : 10px;
+      border : none;
+      border-color : #f1f1f1;
+    }
+    .ant-tabs-ink-bar {
+      display : none !important;
+    }
+    .ant-tabs-tab {
+      margin-right : 15px;
+      padding : 0 0 5px 0;
+      .ant-btn {
+        width : 76px;
+        height : 26px;
+        border : none;
+        border-radius : 15px;
+      }
+      .ant-btn:hover,
+      .ant-btn:focus {
+        color : #fff;
+        border-color : #ff6724;
+        background : #ff6724;
+      }
+    }
+    .ant-tabs-tab-active {
+      .ant-btn {
+        color : #fff;
+        border-color : #ff6724;
+        border-radius : 15px;
+        background : #ff6724;
+      }
+    }
+  }
+}

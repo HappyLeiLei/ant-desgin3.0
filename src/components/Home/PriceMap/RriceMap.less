@@ -1,0 +1,188 @@
+.priceMapBox {
+  height : 260px;
+  margin-bottom : 25px;
+  border-radius : 3px;
+  background : #fff;
+
+  .priceMap {
+    position : relative;
+    float : left;
+    width : 316px;
+    height : 240px;
+    margin-right : 20px;
+    background : url('../../../assets/home/map-bg.png') no-repeat 20px 65px;
+
+    h1 {
+      margin-top : 20px;
+      font-size : 18px;
+      font-weight : bold;
+
+      span {
+        margin-left : 13px;
+        font-size : 12px;
+        font-weight : normal;
+      }
+
+
+      &::before {
+        height : 20px;
+        margin-right : 7px;
+        content : '';
+        border-right : 3px solid #ff6724;
+      }
+    }
+    .mapApi {
+      left : 87px;
+
+      img {
+        position : absolute;
+        top : 55px;
+        left : 87px;
+        display : block;
+        margin-bottom : 15px;
+        transition : All .3s ease-in-out;
+      }
+      .ant-btn {
+        position : absolute;
+        bottom : 25px;
+        left : 87px;
+        width : 120px;
+        height : 26px;
+        line-height : 22px;
+        color : #fff !important;
+        border-color : #ff6724;
+        border-radius : 15px;
+        background : #ff6724 ;
+      }
+      &:hover {
+        .ant-btn {
+          background : #ff7a3f;
+        }
+        img {
+          top : 45px;
+        }
+      }
+    }
+  }
+  .price {
+    position : relative;
+    float : left;
+    width : 830px;
+    .priceMore {
+      position : absolute;
+      z-index : 1;
+      top : 25px;
+      right : 10px;
+      font-size : 12px;
+      color : #ff6724;
+    }
+    .ant-tabs-bar {
+      margin-bottom : 10px;
+      border-color : #f1f1f1;
+    }
+    .ant-tabs-ink-bar {
+      display : none !important;
+    }
+    .ant-tabs-tab {
+      padding : 18px 0 12px 0;
+      .ant-btn {
+        width : 76px;
+        border-radius : 15px;
+      }
+      .ant-btn:hover,
+      .ant-btn:focus {
+        color : #fff;
+        border-color : #ff6724;
+        background : #ff6724;
+      }
+    }
+    .ant-tabs-tab-active {
+      .ant-btn {
+        color : #fff;
+        border-color : #ff6724;
+        border-radius : 15px;
+        background : #ff6724;
+      }
+    }
+    .priceItem {
+      .ant-tabs-bar {
+        border : none;
+      }
+      .ant-tabs-tab {
+        margin-right : 0;
+        padding : 4px 20px;
+        font-size : 14px;
+        font-weight : bold;
+      }
+      .ant-tabs-tab-active {
+        color : #ff6724;
+      }
+      .PriceItemListItem {
+        position : relative;
+        display : inline-block;
+        width : 197px;
+        height : 54px;
+        margin : 0 5px 12px  5px;
+        padding : 12px;
+        font-size : 12px;
+        color : #ff3131;
+        &.priDown {
+          color : #53a000;
+          .anticon-caret-up {
+            transform : rotate(180deg);
+          }
+        }
+        strong {
+          width : 75px;
+          font-size : 24px;
+          text-align : center;
+        }
+        .title,
+        .pri,
+        .float {
+          position : absolute;
+          top : 12px;
+        }
+        .title {
+          position : absolute;
+          top : 12px;
+          left : 12px;
+          display : inline-block;
+          width : 50px;
+          height : 34px;
+          margin-right : 10px;
+          padding-top : 8px;
+          padding-right : 10px;
+          text-align : center;
+          vertical-align : middle;
+          border-right : 1px solid #f1f1f1;
+        }
+        .pri {
+          left : 73px;
+          font-family : 'arial';
+          font-weight : normal;
+        }
+        .float {
+          top : 20px;
+          right : 10px;
+        }
+        &::before {
+          position : absolute;
+          top : 0;
+          left : 0;
+          width : 0;
+          height : 0;
+          content : '';
+          transform : rotate(0deg);
+          border-width : 5px;
+          border-style : solid;
+          border-top-color : inherit ;
+          border-right-color : transparent ;
+          border-bottom-color : transparent ;
+          border-left-color : inherit;
+          border-top-left-radius : 3px;
+        }
+      }
+    }
+  }
+}

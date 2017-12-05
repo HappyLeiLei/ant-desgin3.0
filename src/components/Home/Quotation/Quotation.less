@@ -1,0 +1,103 @@
+.quotationBox {
+  margin-bottom : 45px;
+
+  .quotationItem {
+    position : relative;
+    display : inline-block;
+    overflow : hidden;
+    min-width : 190px;
+    max-width : 390px;
+    height : 219px;
+    margin-right : 10px;
+    padding-top : 20px;
+    border-radius : 3px;
+    background : #fff;
+    &:last-child {
+      margin-right : 0;
+    }
+    &:first-child {
+      width : 390px;
+      &::before {
+        position : absolute;
+        top : 70px;
+        left : 190px;
+        display : inline-block;
+        width : 1px;
+        height : 135px;
+        content : '';
+        background : #dedede;
+      }
+      & .quotation {
+        margin-right : 20px;
+        &:last-child {
+          margin-right : 0;
+        }
+      }
+    }
+    h1 {
+      position : relative;
+      margin-bottom : 20px;
+      padding-left : 10px;
+      font-size : 18px;
+      font-weight : bold;
+      line-height : 18px;
+      &::before {
+        position : absolute;
+        top : 0;
+        left : 0;
+        display : inline-block;
+        height : 18px;
+        margin-right : 15px;
+        content : '';
+        border-left : 3px solid #ff3131;
+      }
+    }
+    .quotation {
+      display : inline-block;
+      padding : 0 10px;
+      div:last-child > h3 {
+        margin-bottom : 10px;
+      }
+      div > h2 {
+        margin-bottom : 20px;
+        font-size : 12px;
+        line-height : 12px;
+      }
+      div > h3 {
+        margin-bottom : 31px;
+        font-size : 18px;
+        line-height : 18px;
+        span {
+          display : inline-block;
+          margin-right : 5px;
+          padding : 4px;
+          font-size : 12px;
+          line-height : 12px;
+          text-align : center;
+          color : #fff;
+          border-radius : 3px;
+          background : #ff3131;
+          &:nth-child(1) {
+            padding : 3px;
+          }
+        }
+        strong {
+          position : relative;
+          top : 2px;
+          display : inline-block;
+          padding-right : 40px;
+          font-weight : normal;
+          line-height : 18px;
+        }
+      }
+    }
+  }
+  .priDown {
+    h1::before {
+      border-color : #53a000;
+    }
+    .quotation > div > h3 > span {
+      background : #53a000;
+    }
+  }
+}

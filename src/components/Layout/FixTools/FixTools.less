@@ -1,0 +1,75 @@
+/*
+ * @Author: PangLei 
+ * @Date: 2017-11-24 15:02:20 
+ * @Last Modified by: PangLei
+ * @Last Modified time: 2017-11-27 14:15:47
+ */
+.toolsBox {
+  position : fixed;
+  z-index : 999;
+  top : 408px;
+  right : 65px;
+  padding-left : 6px;
+  .toolsItem {
+    position : relative;
+    width : 46px;
+    padding-left : 6px;
+    a {
+      display : block;
+      width : 40px;
+      height : 40px;
+      margin-top : 5px;
+      line-height : 40px;
+      transition : All .5s ease-in-out;
+      text-align : center;
+      color : #a68678 !important;
+      border : 1px solid #a68678;
+      border-radius : 3px;
+      background : #fff;
+      &:hover {
+        transform : rotate(360deg);
+        color : #fff !important;
+        background : #a68678;
+      }
+    }
+    &.kefu {
+      display : none;
+    }
+    &.back_top,
+    &.kefu,
+    &.gongzhong {
+      a {
+        font-size : 24px;
+        color : #fff !important;
+        background : #a68678 !important;
+        &:last-child {
+          font-size : 18px;
+        }
+      }
+    }
+    &.back_top {
+      display : none;
+    }
+    .toolsItemContent {
+      position : absolute;
+      top : 0;
+      right : 38px;
+      display : none;
+      width : 100px;
+      margin-right : 6px;
+      padding : 5px;
+      text-align : center;
+      border : 1px solid #ddd;
+      background : #fff;
+    }
+    &:hover .toolsItemContent {
+      display : block;
+    }
+
+    .gongzhonghao {
+      width : 100px;
+      height : 135px;
+      background : #fff url('../../../assets/gongzhonghao.png') no-repeat center;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+/*
+ * @Author: PangLei 
+ * @Date: 2017-11-08 14:05:46 
+ * @Last Modified by: PangLei
+ * @Last Modified time: 2017-12-05 17:16:36
+ */
+
+@import './color.less';
+// 51ICON
+@import '../font/iconfont.css';
+
+
+body {
+  font-family : Microsoft YaHei,tahoma,arial,Hiragino Sans GB,sans-serif !important;
+  transition : All .3s ease-in-out;
+  color : @font-g-color;
+  background-color : @bg-color !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color : @font-g-color;
+}
+
+a {
+  color : @font-g-color;
+  &:hover,
+  &.selector {
+    color : @hover-color;
+  }
+}
+
+.container {
+  width : 1190px;
+  height : 100%;
+  margin : 0 auto;
+}
+
+// 文字单行溢出后显示省略号
+.line-limit-length {
+  overflow : hidden;
+  white-space : nowrap;
+  text-overflow : ellipsis;
+  // &::after {
+  //   position : absolute;
+  //   right : 0;
+  //   bottom : 0;
+  //   padding : 0 0 2px 40px;
+  //   font-weight : bold;
+  //   content : '...';
+  //   color : #999;
+  //   background : url('../assets/ellipsis_bg.png') repeat-y;
+  // }
+}
+
+.gBoxShadow {
+  box-shadow : 0 0 10px 1px rgb(231, 231, 231);
+}
+
+// 重置全局按钮字体
+.ant-btn {
+  font-family : Microsoft YaHei;
+}
+
+.ant-layout {
+  background-color : @bg-color !important;
+}
+
+.ant-layout-content {
+  min-height : 400px;
+}

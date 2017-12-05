@@ -1,0 +1,43 @@
+/*
+ * @Author: PangLei 
+ * @Date: 2017-11-29 14:13:28 
+ * @Last Modified by: PangLei
+ * @Last Modified time: 2017-11-29 15:09:40
+ */
+.floorBox {
+  z-index : 0;
+  .floorLeft {
+    padding : 0 10px;
+    .floorTitle {
+      position : relative;
+      z-index : 1;
+      overflow : hidden;
+      width : 330px;
+      height : 150px;
+      margin-top : -35px;
+      margin-bottom : 20px;
+      transition : all .3s ease-in-out;
+      &::before {
+        position : absolute;
+        bottom : 0;
+        display : block;
+        width : 100%;
+        height : 10px;
+        content : '';
+        background : linear-gradient(rgba(0, 0, 0, .01), rgba(0, 0, 0, .2));
+      }
+      &:hover {
+        height : 157px;
+        margin-top : -42px;
+      }
+    }
+    .floorMain {
+      z-index : 1;
+    }
+  }
+}
+
+// 重置首页按钮点击光效
+.ant-btn-clicked:after {
+  border-color : #ff6724;
+}

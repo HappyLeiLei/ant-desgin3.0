@@ -1,0 +1,45 @@
+.supplierBox {
+  position : relative;
+  overflow : hidden;
+  margin-bottom : 45px;
+  padding : 12px 0;
+  transition : all .3s ease-in-out;
+  white-space : nowrap;
+  background : #fff;
+  .supplierItem {
+    display : inline-block;
+    width : 239px;
+    padding : 0 20px;
+    text-align : center;
+    border-right : 1px solid #f1f1f1;
+    // a:hover > img {
+    // box-shadow : 0 0 15px 1px rgba(153, 153, 153, .15);
+    // }
+  }
+  .prev {
+    position : absolute;
+    top : 20px;
+    display : inline-block;
+    display : none;
+    width : 20px;
+    height : 35px;
+    line-height : 35px;
+    cursor : pointer;
+    transition : all .3s ease-in-out;
+    text-align : center;
+    color : #fff;
+    background : rgba(0, 0, 0, .3);
+  }
+  .prevBefor {
+    left : 0;
+    border-radius : 0 50px 50px 0;
+  }
+  .prevAfter {
+    right : 0;
+    border-radius : 50px 0 0 50px;
+  }
+  &:hover .prev {
+    z-index : 1;
+    display : block;
+  }
+}

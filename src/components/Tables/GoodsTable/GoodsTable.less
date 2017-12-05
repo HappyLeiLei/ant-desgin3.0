@@ -1,0 +1,37 @@
+.goodsTableBox {
+  // box-shadow : 0 0 15px 1px rgba(153, 153, 153, .15);
+
+  .ant-table-tbody > tr:hover > td {
+    background : rgba(237, 174, 147, .309);
+  }
+
+  .ant-table-thead > tr > th {
+    padding : 15px 8px;
+    border-bottom : 1px solid #dedede;
+    background : #fff;
+  }
+  .ant-table-tbody > tr > td {
+    padding : 12px 8px 11px 8px;
+    font-size : 14px;
+    &:last-child {
+      text-align : right;
+       > .ant-btn {
+        width : 80px;
+        border : none;
+        border-radius : 15px;
+        background : #f5f5f5;
+        &:hover {
+          color : #fff;
+          background : #ff6724;
+        }
+      }
+    }
+  }
+  .ant-table-tbody  tr  td:nth-child(6) {
+    font-size : 16px;
+    color : #ff3131;
+  }
+  .ant-spin-container {
+    padding : 0 15px;
+  }
+}

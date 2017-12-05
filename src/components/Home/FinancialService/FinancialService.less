@@ -1,0 +1,95 @@
+/*
+ * @Author: PangLei 
+ * @Date: 2017-11-29 14:16:49 
+ * @Last Modified by: PangLei
+ * @Last Modified time: 2017-12-05 16:26:06
+ */
+@import '../floors.less';
+.homeFinancialServiceBox {
+  min-height : 365px;
+  margin-bottom : 45px;
+  background : #fff;
+  .floorTitle {
+    background : url('../../../assets/home/f4.png') no-repeat top center;
+  }
+  .jinfuBanner {
+    padding-left : 10px;
+    text-align : center;
+  }
+  .floorContent {
+    margin : 20px 20px 20px 0;
+    padding : 20px 20px 5px 20px;
+    .jinfuCont {
+      float : left;
+      width : 490px;
+      .jinfuItem {
+        position : relative;
+        display : inline-block;
+        width : 235px;
+        height : 135px;
+        margin : 0 10px 10px 0;
+        border : 1px solid #fff2dd;
+        border-radius : 3px;
+        background : #fff;
+        h1,
+        h2 {
+          position : absolute;
+          left : 20px;
+        }
+        h1 {
+          top : 20px;
+          font-size : 16px;
+          font-weight : bold;
+          color : #d1ad5c !important;
+        }
+        h2 {
+          bottom : 20px;
+          font-size : 14px;
+        }
+        &.jinfuItem1 {
+          background : url('../../../assets/home/f4-1.png') no-repeat 150px bottom;
+        }
+        &.jinfuItem2 {
+          background : url('../../../assets/home/f4-2.png') no-repeat 155px bottom;
+        }
+        &.jinfuItem3 {
+          background : url('../../../assets/home/f4-3.png') no-repeat 145px bottom;
+        }
+        &.jinfuItem4 {
+          background : url('../../../assets/home/f4-4.png') no-repeat 150px bottom;
+        }
+      }
+    }
+    .jinfuLiu {
+      position : relative;
+      float : right;
+      width : 290px;
+      height : 280px;
+      background : #fbf6ef url('../../../assets/home/f4-5.png') no-repeat center;
+      span,
+      h1 {
+        position : absolute;
+      }
+      span {
+        top : 21px;
+        right : 32px;
+      }
+      h1 {
+        bottom : 15px;
+        left : 25px;
+        font-size : 15px;
+        .anticon-phone {
+          margin : 0 5px 0 25px;
+          font-size : 20px;
+          transform : rotate(180deg);
+          color : #d1ad5c;
+        }
+        strong {
+          font-family : 'arial';
+          font-size : 20px;
+          font-weight : bold;
+        }
+      }
+    }
+  }
+}

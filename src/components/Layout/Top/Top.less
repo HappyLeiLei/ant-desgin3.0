@@ -1,0 +1,167 @@
+/*
+ * @Author: PangLei 
+ * @Date: 2017-11-08 15:20:22 
+ * @Last Modified by: PangLei
+ * @Last Modified time: 2017-11-17 16:38:25
+ */
+
+@import '../../../style/color.less';
+
+
+.top {
+  height : 32px;
+  line-height : 32px;
+  border-bottom : 1px solid #dedeed;
+  background-color : #f9f9f9;
+
+  .login_reg {
+    display : inline-block;
+    a {
+      margin-left : 15px;
+    }
+  }
+
+
+  .top_menu {
+    float : right;
+    height : 32px;
+    line-height : 31px;
+    text-align : right;
+    background : inherit;
+    .top_menu_nav_li {
+      float : left;
+      .top_menu_item {
+        position : relative;
+        display : inline-block;
+        margin-left : -1px;
+        padding : 0 10px 0 11px;
+        padding-bottom : 1px;
+        font-size : 12px;
+        background : url('../../../assets/download.png') no-repeat right center;
+        .anticon-down {
+          transition : All .3s ease-in-out;
+          transform : scale(.7);
+          color : #bbb;
+        }
+      }
+
+      &:hover .top_menu_item {
+        z-index : 10;
+        margin-left : -1px;
+        padding : 0 9px 0 10px;
+        padding-bottom : 1px;
+        text-decoration : underline;
+        color : @hover-color;
+        border-right : 1px solid #dedede;
+        border-left : 1px solid #dedede;
+        background-color : #fff;
+        background-image : none;
+        .anticon-down {
+          transform : rotate(180deg) scale(.7);
+        }
+      }
+      .top_menu-box {
+        position : absolute;
+        z-index : 1;
+        top : 32px;
+        left : -1px;
+        display : none;
+        padding : 5px 10px 10px 10px;
+        transition : All .3s ease-in-out;
+        text-align : left;
+        border : 1px solid #dedeed;
+        border-top : none;
+        background-color : #fff;
+      }
+      &:hover .top_menu-box {
+        display : block;
+        animation-name : fadeIn; /*动画名称*/
+        animation-duration : .2s; /*动画持续时间*/
+        animation-delay : 0s; /*延迟时间*/
+        animation-iteration-count : 1; /*动画次数*/
+      }
+      &:first-child:hover .top_menu_item {
+        padding-bottom : 0;
+        border-color : #f9f9f9;
+        background : #f9f9f9 url('../../../assets/download.png') no-repeat right center;
+      }
+    }
+  }
+  .user_tools {
+    float : left;
+    .top_menu_nav_li {
+      &:last-child .top_menu_item {
+        padding-bottom : 0;
+        border-color : #f9f9f9;
+        background : #f9f9f9;
+        background-image : none !important;
+      }
+    }
+  }
+}
+.user_setting {
+  width : 248px;
+  color : #4d4d4d;
+  .pull_right {
+    float : right;
+  }
+  .o_member {
+    padding-left : 25px;
+    color : #bbb;
+    background : url('../../../assets/hg.png') no-repeat left center;
+  }
+}
+
+.app_down {
+  width : 150px;
+  height : 100px;
+  background : url('../../../assets/app_down.png') no-repeat center;
+}
+.caigou {
+  width : 93px;
+  dd {
+    height : 24px;
+    line-height : 24px;
+  }
+}
+.gongying {
+  width : 93px;
+  dd {
+    height : 24px;
+    line-height : 24px;
+  }
+}
+.maps {
+  right : -1px;
+  left : auto !important;
+  min-width : 560px !important;
+
+  dl {
+    height : 24px;
+    margin-bottom : 1px;
+    line-height : 24px;
+  }
+  dt,
+  dd {
+    display : inline-block;
+    min-width : 50px;
+    margin-right : 15px;
+  }
+  dt {
+    padding-right : 15px;
+    color : #999;
+    border-right : 1px dotted #ddd;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity : 0; /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity : .5; /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity : 1; /*结尾状态 透明度为1*/
+  }
+}
